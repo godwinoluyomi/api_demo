@@ -18,11 +18,8 @@ const UserList = () => {
     console.log(listOfUser);
 
     return (
-
-        //         {data && data.map((item) => <p>{item.title}</p>)}
         <div>
-
-            {listOfUser.map((user) => <User key={user.id} {...user} />)}
+            {listOfUser && listOfUser.map((user) => <User key={user.id} {...user} />)}
         </div>
     )
 
